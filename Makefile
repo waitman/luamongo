@@ -1,12 +1,12 @@
 CC= g++
-CFLAGS= -g -O2 -shared -fPIC -I /usr/include/lua5.1/ -I/usr/local/include/mongo/
+CFLAGS= -g -O2 -shared -fPIC -I/usr/include -I/usr/pkg/include/mongo/ -I/usr/pkg/include
 AR= ar rcu
 RANLIB= ranlib
 RM= rm -f
 LIBS=-lmongoclient -lboost_thread -lboost_filesystem
 OUTLIB=mongo.so
 
-LDFLAGS= $(LIBS)
+LDFLAGS= -L/usr/pkg/lib -L/usr/lib $(LIBS)
 
 OBJS = main.o mongo_bsontypes.o mongo_dbclient.o mongo_replicaset.o mongo_connection.o mongo_cursor.o mongo_gridfile.o mongo_gridfs.o mongo_gridfschunk.o mongo_query.o utils.o
 
