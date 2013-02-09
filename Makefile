@@ -3,7 +3,7 @@ CFLAGS= -g -O2 -shared -fPIC -I/usr/include -I/usr/pkg/include/mongo/ -I/usr/pkg
 AR= ar rcu
 RANLIB= ranlib
 RM= rm -f
-LIBS=-lmongoclient -lboost_thread -lboost_filesystem
+LIBS= -pthread -lssl -lmongoclient -lboost_thread -lboost_filesystem
 OUTLIB=mongo.so
 
 LDFLAGS= -L/usr/pkg/lib -L/usr/lib $(LIBS)
