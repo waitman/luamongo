@@ -1,5 +1,11 @@
 # A Lua driver for mongodb
 
+NetBSD
+
+# make
+
+# cp mongo.so /usr/lib/lua/5.1/
+
 ## Wiki Documentation
 
  * <a href="https://github.com/moai/luamongo/wiki/Bsontypes">BsonTypes</a>
