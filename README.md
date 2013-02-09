@@ -1,10 +1,9 @@
 # A Lua driver for mongodb
 
-NetBSD
+## NetBSD
 
-# make
-
-# cp mongo.so /usr/lib/lua/5.1/
+    # make
+    # cp mongo.so /usr/lib/lua/5.1/
 
 ## Wiki Documentation
 
